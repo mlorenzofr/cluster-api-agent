@@ -170,7 +170,7 @@ var _ = Describe("ClusterDeployment Controller", func() {
 				Expect(k8sClient.Get(ctx, client.ObjectKeyFromObject(cd), aci)).To(Succeed())
 
 				// Assert baremetal multinode platform install
-				Expect(aci.Spec.PlatformType).To(Equal(hiveext.BareMetalPlatformType))
+				Expect(aci.Spec.PlatformType).To(Equal(hiveext.NutanixPlatformType))
 				Expect(aci.Spec.IngressVIPs).To(Equal(ingressVIPs))
 				Expect(aci.Spec.APIVIPs).To(Equal(apiVIPs))
 				Expect(aci.Annotations).To(HaveKey(InstallConfigOverrides))
