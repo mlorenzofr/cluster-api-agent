@@ -251,7 +251,7 @@ func (r *ClusterDeploymentReconciler) computeAgentClusterInstall(
 		aci.Spec.IngressVIPs = acp.Spec.Config.IngressVIPs
 		aci.Spec.PlatformType = hiveext.PlatformType(configv1.NutanixPlatformType)
 		aci.Annotations = map[string]string{
-			InstallConfigOverrides: `{"capabilities": {"baselineCapabilitySet": "None", "additionalEnabledCapabilities": ["baremetal","Console","Insights","OperatorLifecycleManager","Ingress","CSISnapshot","marketplace"]}}"`,
+			InstallConfigOverrides: `{"capabilities": {"baselineCapabilitySet": "None", "additionalEnabledCapabilities": ["baremetal","Console","Insights","OperatorLifecycleManager","Ingress","CSISnapshot","marketplace","CloudControllerManager"]}}"`,
 		}
 	}
 	return aci, nil

@@ -174,7 +174,7 @@ var _ = Describe("ClusterDeployment Controller", func() {
 				Expect(aci.Spec.IngressVIPs).To(Equal(ingressVIPs))
 				Expect(aci.Spec.APIVIPs).To(Equal(apiVIPs))
 				Expect(aci.Annotations).To(HaveKey(InstallConfigOverrides))
-				Expect(aci.Annotations[InstallConfigOverrides]).To(Equal(`{"capabilities": {"baselineCapabilitySet": "None", "additionalEnabledCapabilities": ["baremetal","Console","Insights","OperatorLifecycleManager","Ingress"]}}"`))
+				Expect(aci.Annotations[InstallConfigOverrides]).To(Equal(`{"capabilities": {"baselineCapabilitySet": "None", "additionalEnabledCapabilities": ["baremetal","Console","Insights","OperatorLifecycleManager","Ingress","CloudControllerManager"]}}"`))
 			})
 		})
 	})
