@@ -62,10 +62,13 @@ require (
 	github.com/google/pprof v0.0.0-20240424215950-a892ee059fd6 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/imdario/mergo v0.3.16 // indirect
+	github.com/itchyny/gojq v0.12.8 // indirect
+	github.com/itchyny/timefmt-go v0.1.3 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/josharian/intern v1.0.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/lib/pq v1.10.9 // indirect
 	github.com/mailru/easyjson v0.7.7 // indirect
 	github.com/matttproud/golang_protobuf_extensions/v2 v2.0.0 // indirect
 	github.com/metal3-io/baremetal-operator/pkg/hardwareutils v0.6.0 // indirect
@@ -114,8 +117,8 @@ require (
 )
 
 replace (
-	github.com/openshift/assisted-service/api => github.com/openshift/assisted-service/api v0.0.0-20240207192840-bc922bad5830
-	github.com/openshift/assisted-service/models => github.com/openshift/assisted-service/models v0.0.0-20240207192840-bc922bad5830
+	github.com/openshift/assisted-service/api => github.com/openshift/assisted-service/api v0.0.0-20250222094554-39bc1ae7b0a6
+	github.com/openshift/assisted-service/models => github.com/openshift/assisted-service/models v0.0.0-20250222094554-39bc1ae7b0a6
 )
 
 replace github.com/openshift/assisted-service => github.com/mlorenzofr/assisted-service v0.0.0-20250225105131-e07450505d6a
