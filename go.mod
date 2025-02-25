@@ -118,3 +118,5 @@ replace (
 	github.com/openshift/assisted-service/api => github.com/openshift/assisted-service/api v0.0.0-20240207192840-bc922bad5830
 	github.com/openshift/assisted-service/models => github.com/openshift/assisted-service/models v0.0.0-20240207192840-bc922bad5830
 )
+
+replace github.com/openshift/assisted-service => github.com/mlorenzofr/assisted-service mgmt-20025
